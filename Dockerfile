@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster
+FROM python:3.7
 
 WORKDIR /home/app
 
@@ -7,4 +7,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD python app.py
+EXPOSE 5000
+
+CMD ["python", "app.py"]

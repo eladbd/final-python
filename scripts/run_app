@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --name war-elad -d -p 5000:5000 eladbd/final-python:19
+docker run -itd --name war-elad -p 5000:5000 eladbd/final-python:19

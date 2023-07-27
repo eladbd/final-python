@@ -4,10 +4,10 @@ hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
-      runas: root
+      runas: ubuntu
     - location: scripts/run_app
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: scripts/stop_app
       timeout: 300
